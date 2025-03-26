@@ -2,7 +2,6 @@
 
 class ChatWidget {
   constructor(options = {}) {
-    // Configuración predeterminada
     this.config = {
       apiUrl: options.apiUrl || 'ws://localhost:8000/ws',
       position: options.position || 'bottom-right',
@@ -476,3 +475,5 @@ document.addEventListener('DOMContentLoaded', () => {
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = ChatWidget;
 }
+
+window.ChatWidget = ChatWidget;
