@@ -471,8 +471,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.ChatWidget = new ChatWidget();
 });
 
-// Exportar para sistemas de módulos si es necesario
 if (typeof window !== 'undefined') {
   window.ChatWidget = ChatWidget;
 }
-
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = ChatWidget;
+}
