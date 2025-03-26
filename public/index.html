@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Carga el script del widget -->
+        <script src="chat-widget.js"></script>
+    
+        <!-- Inicializa el widget con tu IP -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                new ChatWidget({
+                    apiUrl: 'ws://gatosnegros-chatbotlaguna.hf.space/ws',  // Reemplaza TU_IP con tu dirección IP
+                    primaryColor: '#4a6baf',        // Color principal del widget
+                    title: 'Asistente Virtual',     // Título del chat
+                    greeting: '¡Hola! ¿En qué puedo ayudarte hoy?'  // Mensaje de bienvenida
+                });
+            });
+        </script>
+</body>
+</html>
